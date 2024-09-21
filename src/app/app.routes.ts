@@ -14,8 +14,6 @@ export const routes: Routes = [
         (m) => m.BudgetPlannerModule
       ),
   },
-  // Optionally add a wildcard route to catch unknown routes
-  { path: '**', redirectTo: 'budget-planner/login' }, // Catch-all for undefined routes
 ];
 
 @NgModule({
