@@ -1,12 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'budget-planner', // Redirect to 'budget-planner' by default
-    pathMatch: 'full',
-  },
   {
     path: 'budget-planner',
     loadChildren: () =>
@@ -15,9 +9,3 @@ export const routes: Routes = [
       ),
   },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}
